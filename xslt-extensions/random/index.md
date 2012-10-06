@@ -30,7 +30,9 @@ The following methods are available:
 	<tr>
 		<td><code>GetRandomGuid([format])</code></td>
 		<td>dadb6c43-137b-440d-9bee-9542554ac7fd</td>
-		<td></td>
+		<td>
+			<var>format</var> is optional and can be either of 'd' (default), 'n', 'p', 'b', or 'x'
+		</td>
 	</tr>
 	<tr>
 		<td><code>GetRandomNumber()</code></td>
@@ -71,4 +73,17 @@ The following methods are available:
 		<td>yzy</td>
 		<td>A random string of <var>count</var> characters</td>
 	</tr>
+</table>
+
+
+### GetRandomGuid()
+
+The optional format string yields the following types of GUIDs:
+
+<table>
+	<tr><td>d</td><td><code>2defabe0-0968-43f5-9486-ccef26d77a46</code></td></tr>
+	<tr><td>n</td><td><code>d9565077f54f4b9688b854076d004579</code></td></tr>
+	<tr><td>p</td><td><code>(27461e8e-82df-44d5-8585-9cb287f68284)</code></td></tr>
+	<tr><td>b</td><td><code>{2b40b243-255c-4575-91b2-0466cdf82e13}</code></td></tr>
+	<tr><td>x</td><td><code>{0x356bc45d,0xad00,0x48ca,{0xa9,0x6d,0xd5,0x00,0x89,0x34,0xe9,0xc7}}</code></td></tr>
 </table>

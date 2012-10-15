@@ -18,6 +18,16 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 
 The following methods are available:
 
+* GetRandomDouble()
+* GetRandomGuid(format)
+* GetRandomNumber(maximum)
+* GetRandomNumber(minimum, maximum)
+* GetRandomNumbers(count)
+* GetRandomNumbersAsXml(count)
+* GetRandomString(count)
+
+This table show some sample output from these methods:
+
 <table border="1" cellspacing="5" cellpadding="5">
 	<tr>
 		<th>Method</th><th>Sample output</th><th>Notes</th>

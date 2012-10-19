@@ -32,13 +32,13 @@ to assign a prefix using a namespace declaration, and exclude the prefix from an
 
 The following methods are available:
 
-* GetRandomDouble()
-* GetRandomGuid(format)
-* GetRandomNumber(maximum)
-* GetRandomNumber(minimum, maximum)
-* GetRandomNumbers(count)
-* GetRandomNumbersAsXml(count)
-* GetRandomString(count)
+* `GetRandomDouble()`
+* `GetRandomGuid(format)`
+* `GetRandomNumber(maximum)`
+* `GetRandomNumber(minimum, maximum)`
+* `GetRandomNumbers(count)`
+* `GetRandomNumbersAsXml(count)`
+* `GetRandomString(count)`
 
 This table show some sample output from these methods:
 

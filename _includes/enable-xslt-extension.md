@@ -1,4 +1,4 @@
-## Enabling the {{ page.title }} XSLT extension for use in your XSLT templates.
+## Enabling the XSLT extension for use in your XSLT templates.
 
 Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 

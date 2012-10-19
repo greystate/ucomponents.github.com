@@ -16,6 +16,20 @@ Add the following XML snippet to your `~/config/xsltExtensions.config` file:
 		...
 	</XsltExtensions>
 
+In case you've already created some XSLT files in Umbraco that you want to use this extension in, you'll likely need
+to assign a prefix using a namespace declaration, and exclude the prefix from any output:
+
+	<xsl:stylesheet version="1.0"
+		...
+		xmlns:ucom.random="urn:ucomponents.random"
+		...
+		exclude-result-prefixes="... ucom.random">
+		...
+	</xsl:stylesheet>
+
+
+### Available methods
+
 The following methods are available:
 
 * GetRandomDouble()

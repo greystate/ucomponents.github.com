@@ -2,31 +2,16 @@
 layout: extension
 title: Random
 category: XSLT Extensions
+
+extassembly: uComponents.Core
+exttype: uComponents.Core.XsltExtensions.Random
+extalias: ucomponents.random
+extprefix: ucom.random
 ---
 
 The Random library XSLT extension can be used to generate various types of random numbers.
 
-## Enabling the XSLT extension for use in your XSLT templates.
-
-Add the following XML snippet to your `~/config/xsltExtensions.config` file:
-
-	<XsltExtensions>
-		...
-		<ext assembly="uComponents.Core" type="uComponents.Core.XsltExtensions.Random" alias="ucomponents.random" />
-		...
-	</XsltExtensions>
-
-In case you've already created some XSLT files in Umbraco that you want to use this extension in, you'll likely need
-to assign a prefix using a namespace declaration, and exclude the prefix from any output:
-
-	<xsl:stylesheet version="1.0"
-		...
-		xmlns:ucom.random="urn:ucomponents.random"
-		...
-		exclude-result-prefixes="... ucom.random">
-		...
-	</xsl:stylesheet>
-
+{% include enable-xslt-extension.md %}
 
 ### Available methods
 

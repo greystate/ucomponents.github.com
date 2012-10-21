@@ -3,12 +3,6 @@ layout: extension
 title: XML
 category: XSLT Extensions
 
-extassembly: uComponents.Core
-exttype: uComponents.Core.XsltExtensions.Xml
-extalias: ucomponents.xml
-extprefix: ucom.xml
+extension_type: uComponents.Core.XsltExtensions.Xml
+extension_alias: ucomponents.xml
 ---
-
-{% include enable-xslt-extension.md %}
-
-

@@ -98,9 +98,10 @@ The optional format string yields the following types of GUIDs:
 
 ## XSLT examples
 
-### GetRandomNumbersAsXml()
+Most of the methods in the **Random** extension are fairly self-explanatory, so here's just a single example of
+using `GetRandomNumbersAsXml()` to effectively do a random sort on a set of nodes, to display 5 of them.
 
-Here's how to pick 5 random quotes for display in a list:
+### GetRandomNumbersAsXml()
 
 	<!-- Grab the Quote documents below the current page -->
 	<xsl:variable name="quotes" select="$currentPage/Quote" />

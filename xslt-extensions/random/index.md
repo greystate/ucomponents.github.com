@@ -95,3 +95,32 @@ The optional format string yields the following types of GUIDs:
 	<tr><td>b</td><td><code>{2b40b243-255c-4575-91b2-0466cdf82e13}</code></td></tr>
 	<tr><td>x</td><td><code>{0x356bc45d,0xad00,0x48ca,{0xa9,0x6d,0xd5,0x00,0x89,0x34,0xe9,0xc7}}</code></td></tr>
 </table>
+
+## XSLT examples
+
+### GetRandomNumbersAsXml()
+
+Here's how to pick 5 random quotes for display in a list:
+
+	<!-- Grab the Quote documents below the current page -->
+	<xsl:variable name="quotes" select="$currentPage/Quote" />
+
+	<!-- How many were there? -->
+	<xsl:variable name="total" select="count($quotes)" />
+
+	<!-- Get the numbers from 1 to $total, sorted randomly -->
+	<xsl:variable name="randomNumbers" select="ucom:GetRandomNumbersAsXml($total)/value" />
+
+	<xsl:for-each select="$randomNumbers">
+		<xsl:if test="position() &lt;= 5"> 
+			<xsl:apply-templates select="$quotes[position() = current()]" />
+		</xsl:if>
+	</xsl:for-each>
+
+	<!-- Template for a Quote -->
+	<xsl:template match="Quote">
+		<blockquote>
+			<xsl:value-of select="bodyText" />
+		</blockquote>
+	</xsl:template>
+

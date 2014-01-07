@@ -33,7 +33,7 @@ retired_version:
 ![Content Editor](DataEditor.jpg)
 
 
-## Example Xml
+## Example XML
 
 	<CheckBoxTree>
 		<nodeId>100</nodeId>
